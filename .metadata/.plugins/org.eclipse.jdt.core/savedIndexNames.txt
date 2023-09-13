@@ -10,7 +10,6 @@ INDEX VERSION 1.134+C:\Users\ptaem\eclipse-workspace\.metadata\.plugins\org.ecli
 2666942112.index
 378396265.index
 3665322723.index
-1243057733.index
 1423506000.index
 2189498701.index
 409727887.index

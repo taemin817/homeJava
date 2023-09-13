@@ -23,13 +23,10 @@ public class LogInOutServlet extends HttpServlet{
 		
 		if(id.isEmpty() || pw.isEmpty()) {
 			out.print("id / pw를 입력하세요");
-			// 유효성 검사하는 코드. 둘 중 하나라도 없다면 메세지 출력후 종료
 			return;
 		}
 		HttpSession session = req.getSession();
-		if(session.isNew() || session.getAttribute("id") == null){
-			// session.isNew는 getSession으로 객체를 얻어낼 때 기존에 사용하던 세션 객체를 반환하면 false, 새로 생성해 반환하면 true
-			// isNew가 true 반환 -> 기존에 세션 객체가 없음 -> 로그인 상태 아님
+		if(session.isNew()) || session.getAttribute("id") == null){
 			session.setAttribute("id", id);
 			out.print("로그인 완료");
 		} else {

@@ -47,6 +47,6 @@ public class LogInOutServlet extends HttpServlet{
 			out.print("로그아웃 완료");
 		} else {
 			out.print("로그인 상태 아님");
-		} out.close();
+		} out.close();ㄴ
 	} 
 }
