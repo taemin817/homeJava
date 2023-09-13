@@ -6,6 +6,7 @@
 		<item value="github.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/taemin817/acornweb.git"/>
 		<item value="https://github.com/taemin817/homeweb.git"/>
 	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
