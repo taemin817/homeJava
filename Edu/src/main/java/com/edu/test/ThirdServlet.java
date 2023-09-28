@@ -13,9 +13,21 @@ import javax.servlet.http.HttpServletResponse;
 public class ThirdServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
 		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
-		out.print("<h1>안녕</h1>");
+
+		int i = 1;
+		while (i<=10) {
+			out.print("<br>number : " + i);
+			i++;
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		out.print("<br>실행완료");
 		out.close();
 	}
 

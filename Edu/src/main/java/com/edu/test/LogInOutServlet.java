@@ -43,7 +43,9 @@ public class LogInOutServlet extends HttpServlet{
 		PrintWriter out = resp.getWriter();
 		HttpSession session = req.getSession(false);
 		if( session != null && session.getAttribute("id") != null) {
+			// session != null -> 현재 세션 객체가 null인지 확인, id가 null인지 확인
 			session.invalidate();
+			// 세션 객체를 삭제하는 메서드
 			out.print("로그아웃 완료");
 		} else {
 			out.print("로그인 상태 아님");

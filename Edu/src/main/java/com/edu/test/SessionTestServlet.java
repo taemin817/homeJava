@@ -17,7 +17,7 @@ public class SessionTestServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
-		
+		//print() 및 println() 를 통해 텍스트 데이터를 출력. 이를 사용하여 문자열, 숫자 또는 다른 데이터 유형을 파일에 출력할 수 있음
 		String param = req.getParameter("p");
 		String msg = null;
 		HttpSession session = null;
